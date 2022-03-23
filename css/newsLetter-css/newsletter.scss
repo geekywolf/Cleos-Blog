@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Quantico:wght@700&family=Solway:wght@400;500&family=Source+Serif+Pro:wght@300;400;600&display=swap');
+
+$primary-colour: #4B5320;
+$cta-colour: #9DB619;
+$active-link: #91A3B0;
+$white: #FFFAF0;
+
+body{
+    margin: 0;
+}
+
+
+.body-cta{
+    .newsletter-container{
+        .image-section{
+            img{
+                display: block;
+                margin: 3em auto 0;
+                width: 150px;
+            }
+        }
+
+        form{
+            background-color: #4B5320;
+            margin-top: 3em;
+            .cta-section{
+                h1{
+                    font-family: 'Quantico', Arial, Helvetica, sans-serif;
+                    font-size: 1.5em;
+                    color: $white;
+                    text-align: center;
+                    padding-top: 1em;
+                }
+
+                p{
+                    font-family: 'Source Serif Pro', Arial, Helvetica, sans-serif;
+                    font-size: 1em;
+                    text-align: justify;
+                    padding: 1px 1.5em 0 1.5em;
+                    color: $white;
+                }
+
+                .email-box{
+                    margin-left: 1.5em;
+                    display: flex;
+                    input{
+                        height: 2.5em;
+                        width: 350px;
+                        border-radius: 10px 0 0 10px;
+                        border-style: none;
+                        padding-left: 10px;
+                        font-family: 'Source Serif Pro';
+                        font-weight: '400';
+                    }
+                    button{
+                        background-color: $active-link;
+                        border: none;
+                        width: 50px;
+                        border-radius: 0 10px 10px 0;
+                        img{
+                            vertical-align: middle;
+                            width: 1.5em;
+                        }
+                    }
+                    button:hover{
+                        cursor: pointer;
+                    }
+                    
+                }
+
+                .sm-icons{
+                    margin-top: 1em;
+                    margin-left: 1.5em;
+
+                    img{
+                        width: 2.1em;
+                        margin-right: 5px;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media only screen and (min-width: 760px) {
+
+    body{
+        background: linear-gradient(90deg, #FFFFFF 42%, #4B5320 41%);
+        
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar{
+        .container{ 
+        nav{
+            ul{
+                li{
+                    a{
+                        color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .body-cta{
+        .newsletter-container{
+            display: flex;
+            .image-section{
+                width: 50%;
+                img{
+                    margin-top: 4em;
+                    width: 60%;
+                }
+                
+            }
+
+            form{
+                background-color: transparent;
+                width: 50%;
+                margin: 2em;
+            }
+        }
+    }
+
+}

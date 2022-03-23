@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Quantico:wght@700&family=Solway:wght@400;500&family=Source+Serif+Pro:wght@300;400;600&display=swap");
+body {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
+
+.body-info .container {
+  margin: 0 1em;
+}
+
+.body-info .container .right-col img {
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+}
+
+.body-info .container .left-col h2 {
+  margin-top: -1em;
+  font-family: 'Quantico', Arial, Helvetica, sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+  text-align: center;
+}
+
+.body-info .container .left-col p {
+  font-family: 'Source Serif Pro', Arial, Helvetica, sans-serif;
+  font-size: 1.1em;
+  font-weight: 400;
+  text-align: justify;
+  padding: .3em;
+}
+
+.body-info .container .left-col .ct-btn {
+  margin: .5em .4em;
+  background-color: #9DB619;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  padding: .5em;
+  width: 6em;
+}
+
+.body-info .container .left-col .ct-btn a {
+  text-decoration: none;
+  color: #FFFAF0;
+}
+
+.body-info .container .left-col .sm-icons {
+  margin: .9em .4em 5em;
+}
+
+.body-info .container .left-col .sm-icons img {
+  width: 2em;
+  padding: 2px;
+}
+
+@media only screen and (min-width: 760px) {
+  .body-info .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    place-content: space-between;
+    margin: 3em 1em;
+    width: 95%;
+  }
+  .body-info .container .left-col {
+    width: 70%;
+    margin-left: -10em;
+  }
+  .body-info .container .left-col p {
+    width: 100%;
+  }
+  .body-info .container .right-col {
+    margin-top: -1.8em;
+    margin-right: 7em;
+  }
+}
+/*# sourceMappingURL=about.css.map */

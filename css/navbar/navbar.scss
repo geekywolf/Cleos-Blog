@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Quantico:wght@700&family=Solway:wght@400;500&family=Source+Serif+Pro:wght@300;400;600&display=swap');
+
+$primary-colour: #4B5320;
+$cta-colour: #9DB619;
+$active-link: #91A3B0;
+$white: #FFFAF0;
+
+.navbar{
+    .container{
+        padding: 1em;
+        display: flex;
+        place-content: space-between;
+        
+        img{
+            width: 5em;
+            // margin-top: 1em;
+            margin-left: 1em;
+        }
+
+        nav{
+            ul{
+                li{
+                    display: inline;
+                    margin-left: .9em;
+                    font-family: 'Solway', Arial, Helvetica, sans-serif;
+                    font-size: .9em;
+                    font-weight: 500;
+                    
+                    a{
+                        color: $primary-colour;
+                        text-decoration: none;
+                    }
+
+                    .active{
+                        color: $active-link;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 760px) {
+    .navbar{
+        .container{
+            width: 95%;
+            align-content: center;
+
+            img{
+                width: 7em;
+            }
+
+            nav{
+                ul{
+                    li{
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+    }
+}
