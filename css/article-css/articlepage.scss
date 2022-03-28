@@ -10,7 +10,6 @@ body{
         width: 100%;
     }
     .container{
-        display: flex;
         .content{
             h1{
                 font-family: 'Quantico', Arial, Helvetica, sans-serif;
@@ -18,19 +17,20 @@ body{
                 font-size: 3em;
                 text-align: center;
                 margin-top: 10px;
+                text-decoration: underline;
             }
             p{
                 font-family: 'Source Serif Pro', Arial, Helvetica, sans-serif;
                 font-weight: 400;
                 text-align: justify;
                 justify-content: center;
-                margin: -10px 1em 4em;
+                margin: -10px 0 4em;
+                padding: 0 1.3em;
             }
         }
         
         .aside-section{
-            padding: 0 5px;
-            margin-top: 9em;
+            display: none;
             aside{
                 .aside-image{
                     display: block;
@@ -74,6 +74,7 @@ body{
             object-position: 100% 40%;
         }
         .container{
+            display: flex;
             .content{
                 p{
                     width: 90%;
@@ -82,7 +83,8 @@ body{
             }
 
             .aside-section{
-                margin: 9em 2em 0 0;
+                margin: 9em 2em 0 -2em;
+                display: flex;
             }
         }
     }
