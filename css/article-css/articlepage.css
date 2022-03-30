@@ -4,7 +4,6 @@ body {
 }
 
 .article-content img {
-  margin-top: -1em;
   width: 100%;
 }
 
@@ -69,6 +68,11 @@ body {
 }
 
 @media only screen and (min-width: 760px) {
+  .article-content {
+    max-width: 1080px;
+    height: auto;
+    margin: 0 auto;
+  }
   .article-content img {
     width: 100%;
     max-height: 55vh;
@@ -83,11 +87,11 @@ body {
     display: flex;
   }
   .article-content .container .content p {
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
   }
   .article-content .container .aside-section {
-    margin: 9em 2em 0 -2em;
+    margin: 9em 2em 0 1em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

@@ -1,4 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Quantico:wght@700&family=Source+Serif+Pro&display=swap");
 body {
   margin: 0;
+}
+
+br {
+  display: none;
+}
+
+.article-section .container {
+  margin: 1.5em;
+}
+
+.article-section .container .article-content .article-image {
+  width: 100%;
+  height: 10em;
+}
+
+.article-section .container .article-content .article-description .tag {
+  margin-top: 10px;
+  font-family: 'Quantico', Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  color: #4B5320;
+}
+
+.article-section .container .article-content .article-description h1 {
+  margin-top: -10px;
+  font-family: 'Quantico', Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 1.5em;
+  line-height: 1.2em;
+  text-align: justify;
+}
+
+.article-section .container .article-content .article-description h1 a {
+  text-decoration: none;
+  color: black;
+}
+
+.article-section .container .article-content .article-description h1 :hover {
+  color: #91A3B0;
+}
+
+.article-section .container .article-content .article-description p {
+  margin-top: -15px;
+  font-family: 'Source Serif Pro', Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: .9em;
+}
+
+.article-section .container .article-content .article-description p a {
+  text-decoration: none;
+  color: #4B5320;
+}
+
+.article-section .container .article-content .article-description p :hover {
+  color: #91A3B0;
+}
+
+.article-section .container .article-content hr {
+  border: -.1px solid;
+}
+
+@media only screen and (min-width: 760px) {
+  .article-section .container {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  .article-section .container .article-content {
+    margin: 2em 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .article-section .container .article-content .article-description {
+    margin-top: -10px;
+    margin-left: 2em;
+  }
+  br {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .article-section .container {
+    max-width: 1040px;
+  }
+  .article-section .container .article-content .article-description h1 {
+    font-size: 2em;
+  }
+  br {
+    display: block;
+  }
 }
 /*# sourceMappingURL=index.css.map */

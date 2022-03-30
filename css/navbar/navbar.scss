@@ -7,13 +7,14 @@ $white: #FFFAF0;
 
 .navbar{
     .container{
-        padding: 1em;
+        margin: .5em;
         display: flex;
         place-content: space-between;
         
         img{
             width: 4em;
             margin-left: 1em;
+            margin-top: .5em;
         }
 
         nav{
@@ -47,10 +48,12 @@ $white: #FFFAF0;
 
             img{
                 width: 7em;
+                margin-left: 3em;
             }
 
             nav{
                 ul{
+                    margin-top: 25px;
                     li{
                         font-size: 1em;
                     }

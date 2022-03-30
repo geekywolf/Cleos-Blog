@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Quantico:wght@700&family=Solway:wght@400;500&family=Source+Serif+Pro:wght@300;400;600&display=swap");
 .navbar .container {
-  padding: 1em;
+  margin: .5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10,6 +10,7 @@
 .navbar .container img {
   width: 4em;
   margin-left: 1em;
+  margin-top: .5em;
 }
 
 .navbar .container nav ul li {
@@ -37,6 +38,10 @@
   }
   .navbar .container img {
     width: 7em;
+    margin-left: 3em;
+  }
+  .navbar .container nav ul {
+    margin-top: 25px;
   }
   .navbar .container nav ul li {
     font-size: 1em;
